@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <base href="/">
+</head>
+<body style='width:100%;'>
+    <div>
+        <img src="https://barbarashdwallpapers.com/wp-content/uploads/2014/02/Friends-series-logo-wallpaper-1.jpg" style="width: 100%; height:300px; object-fit: cover; object-position: 0px -300px;">
+    </div>
+    <div>
+        <img src="https://media.popculture.com/2020/04/central-perk-set-getty-20084503.jpeg?auto=webp&width=696&height=391&crop=696:391,smart" 
+        style="width:100%; height:600px; object-fit: cover; position:absolute; object-position: 0px -10px; opacity:0.5;">
+    </div>
+    <div>
+        <h1 style="text-align: center"> 
+            <span style="background-color:white; position: relative; bottom:160px; border-radius: 10px;">"Friends Quotes Game"</span>
+        </h1>
+    </div>
+    <div>
+        <br><br><br><br><br><br>
+    </div>
+    <div style="float: left; text-align: center; width: 40%; border-radius: 10px; border-style: solid; background-color: white; position:relative; 
+        left:30px; bottom:250px; outline-color: white; outline-style:solid; padding-right: 20px">
+        <h1><span style="background-color: black; border-radius:25px; padding-top:10px;
+            color: white;
+            padding-bottom:10px;
+            padding-left:10px;
+            padding-right:10px;
+            text-align:center;
+            margin-left:10px">How to play</span></h1>
+        <p style="text-align: center; 
+            width: 100%; 
+            background-color: black; 
+            border-radius: 25px; 
+            float: center;
+            color: white;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:10px;
+            padding-right:10px;">This game is truly played by house rules. There are no set rules to follow and you can play it however you like. However
+            for those who need some guidance, simply select what type of quotes you want. It can range from specific characters in a
+            selected episode or even the entire transcript from the show. Once you've selected what type of quotes you want, hit the
+            submit button and it should take you to a page filled with the selected quotes. Read the selected quotes aloud, or simply
+            pick a smaller portion of those quotes to read aloud, and ask the person you're playing with to guess either who said it,
+            or if you really want a challenge, what episode and season the quote was said in. Each correct guess gets one point and the 
+            first to 10 points wins!
+        </p>
+    </div>
+    <div class="get" style="float: right; width: 40%; border-radius: 10px; background-color: black; position: relative;
+        right: 30px; bottom: 100px; height:330px; ">
+        <br>
+        <h1 style="text-align: center;"><span style="background-color: white; color: black; border-radius: 25px;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:10px;
+            padding-right:10px;">What kind of quotes do you want?</span></h1>
+        <form action="/insert" method="post" style="background-color: white; color: black; border-radius:25px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:10px;
+        padding-right:10px;">
+            <label for="characters" style="text-align: center; color: black; padding-left:10px;">
+                <span style="font-weight:bold;">
+                    Character
+                </span>(limited selection of the original 6)</label>
+            <br>
+            <select name="characters" id="character-sel" style="text-align: center; margin-left:10px;">
+                <option value="Any">Any</option>
+                <option value="Chandler">Chandler</option>
+                <option value="Joey">Joey</option>
+                <option value="Monica">Monica</option>
+                <option value="Phoebe">Phoebe</option>
+                <option value="Rachel">Rachel</option>
+                <option value="Ross">Ross</option>
+            </select>
+            <br>
+            <label for="seasons" style="color: black; margin-left:10px;">
+                <span style="font-weight:bold;">
+                    Season
+                </span>
+            </label>
+            <br>
+            <select name="seasons" id="season-sel" style="margin-left:10px;">
+                <option value="Any">Any</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <td>
+                <br>
+                <label for="episode" style="text-align: center; color: black; margin-left:10px;">
+                    <span style="font-weight:bold;">
+                        Episode
+                    </span>
+                (Warning: the transcript writers combined many of the last two episodes of each 
+                <br><span style="padding-left: 10px;">season so this is not
+                    entirely accurate. If you're looking for quotes from the last episode of
+                    </span> 
+                <br>
+                <span style="padding-left: 10px;">a season, try the episode before.)</span>
+                </label>
+                <br>
+                <select name="episodes" id="episode-sel" style="margin-left:10px;">
+                    <option value="Any">Any</option>
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                </select>
+            <!--<br>
+            <label for="lines">How many lines? (If you ask for too many lines, will input as many lines as possible)</label>
+            <input type="number" id="line-sel" name="lines" value="1">-->
+            </td>
+            <br><br>
+            <button type="submit" style="margin-left:10px;">Submit Selection</button>
+        </form>
+    <!--<a href="get-data">LOAD DATA</a>-->
+    </div>
+    <section style="float: right;">
+        <div>
+            <h2 style="position: absolute; bottom:-100px; right:20px; border-radius: 10px; background-color: black; color: white;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:10px;
+            padding-right:10px;">
+                The quotes were taken from 
+                <a href="https://fangj.github.io/friends/" style="color:white;"> this website</a></h2>
+        </div>
+    </section>
+</body>
+</html>
